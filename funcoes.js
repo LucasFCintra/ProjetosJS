@@ -121,3 +121,57 @@ function ex5(){
 	}
 
 }
+
+function ex7(){
+
+	var salario = Number(document.getElementById("salario").value);
+	if (salario < 500){
+		var novo = salario + (salario * 30/100)
+		alert("Novo valor " + novo);
+	}
+	else{
+		alert("Não vai ter aumentos");
+	}
+
+}
+
+function ex22(){
+	var idade = Number(document.getElementById("idade").value);
+	//recebe a idade
+	var peso = Number(document.getElementById("peso").value);
+	//recebe o peso
+	if(idade <= 20){
+		if(peso < 60){
+			var risco = 9
+		}
+		else if(peso >= 60 && peso <= 90){
+			var risco = 8
+		}
+		else{
+			var risco = 7
+		}
+	}
+	else if(idade < 51){
+		if(peso < 60){
+			var risco = 6
+		}
+		else if(peso >= 60 && peso <= 90){
+			var risco = 5
+		}
+		else{
+			var risco = 4
+		}
+	}
+	else{
+		if(peso < 60){
+			var risco = 3
+		}
+		else if(peso >= 60 && peso <= 90){
+			var risco = 2
+		}
+		else{
+			var risco = 1
+		}
+	}
+	alert(risco);
+}
